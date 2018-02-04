@@ -3,17 +3,25 @@
     <head>
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <title>The Checker Bot</title>
+        <title>Counter Bot</title>
     </head>
     <body>
         <div id="header">
-            <h1>Welcome to The Checker Bot</h1>
-            <h3>Hello, I'm your very own checker bot. Enter the text you would like me to check.</h3>
+            <h1>Welcome to the Counter Bot</h1>
+            <h3>Hello, I'm your very own counter bot.</h3> 
+            <h3>I can quickly check the length of your social media posts and give you helpful suggestions at the same time!</h3>
         </div>
         <div id="check">
-            <textarea id="message">Hi!</textarea>
+            <textarea id="message">Enter the text you would like me to count.</textarea>
             <p id="count">Character count: <span id="span1"></span></p>
-            <button id="btn" onclick="checkText()">Click me</button>
+            <p id="tip">Tip of the day: <span id="span2"></span></p>
+            <select id="channel">
+                <option value="twitter">Twitter</option>
+                <option value="facebook">Facebook</option>
+                <option value="instagram">Instagram</option>
+                <option value="linkedin">Linkedin</option>
+              </select>
+            <button id="btn" onclick="checkText()">Count it!</button>
         </div>    
     </body>
 
