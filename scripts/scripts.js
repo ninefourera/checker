@@ -1,19 +1,67 @@
 
 function checkText(){
     let charCount = document.getElementById("message").value;
-    
     updateCount(charCount);
 
     tipOfTheDay();
 
-    if(charCount.length > 240) {
-        document.getElementById("message").style.color = "red";
-        // alert("Your Message is too long!");
-        return;
-    } else {
-        document.getElementById("message").style.color = "green";
-        // alert("Great job! Your message is good to go.");
-        return;
+    checkLength();
+
+}
+
+
+function checkLength (){
+    let charCount = document.getElementById("message").value;
+    
+    let channel = document.getElementById("channel").value;
+    switch(channel) {
+        case "instagram":
+            if(charCount.length > 40) {
+                document.getElementById("message").style.color = "red";
+                // alert("Your Message is too long!");
+                return;
+            } else {
+                document.getElementById("message").style.color = "green";
+                // alert("Great job! Your message is good to go.");
+                return;
+            }
+            break;
+        case "facebook":
+            if(charCount.length > 180) {
+                document.getElementById("message").style.color = "red";
+                // alert("Your Message is too long!");
+                return;
+            } else {
+                document.getElementById("message").style.color = "green";
+                // alert("Great job! Your message is good to go.");
+                return;
+            }
+            break;
+        case "twitter":
+            if(charCount.length > 240) {
+                document.getElementById("message").style.color = "red";
+                // alert("Your Message is too long!");
+                return;
+            } else {
+                document.getElementById("message").style.color = "green";
+                // alert("Great job! Your message is good to go.");
+                return;
+            }
+            break;
+        case "linkedin":
+            if(charCount.length > 840) {
+                document.getElementById("message").style.color = "red";
+                // alert("Your Message is too long!");
+                return;
+            } else {
+                document.getElementById("message").style.color = "green";
+                // alert("Great job! Your message is good to go.");
+                return;
+            }
+            break;
+        default:
+            alert("oops");
+            document.getElementById('span2').innerHTML= num.length;
     }
 
 }
