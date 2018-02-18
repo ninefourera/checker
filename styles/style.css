@@ -57,6 +57,10 @@ select {
     height: 49px;
 }
 
+#count-btn {
+    margin-left: 5%;
+}
+
 button:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(187, 25, 187);

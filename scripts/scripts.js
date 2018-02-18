@@ -10,7 +10,6 @@ function checkText(){
 
 }
 
-
 function checkLength (){
     let charCount = document.getElementById("message").value;
     
@@ -85,11 +84,11 @@ function tipOfTheDay() {
     
     switch(channel) {
         case "instagram":
-            // alert("IG");
+            //alert("IG");
             document.getElementById('span2').innerHTML= tipIG[1];
             break;
         case "facebook":
-            document.getElementById('span2').innerHTML= tipFB[1];
+            document.getElementById('span2').innerHTML= tipFB[0];
             // alert("FB");
             break;
         case "twitter":
