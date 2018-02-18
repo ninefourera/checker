@@ -2,10 +2,16 @@ body {
     background-color: lightblue;
     padding: 25px;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
     color: rgb(187, 25, 187);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+row {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
@@ -27,8 +33,8 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
-    width: 550px;
-    height: 325px;
+    width: 90%;
+    height: 210px;
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
 }
@@ -56,12 +62,18 @@ button:hover {
     color: rgb(187, 25, 187);
 }
 
+#head-text, #btns, #message, #check {
+    padding: 2%;
+}
+
 #header {
     background-color: lightblue;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #check {
     background-color: lightblue;
+    font-family: 'Open Sans', sans-serif;
     width: 100%; 
     height: auto;
 }

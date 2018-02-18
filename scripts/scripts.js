@@ -1,6 +1,7 @@
 
 function checkText(){
     let charCount = document.getElementById("message").value;
+
     updateCount(charCount);
 
     tipOfTheDay();
@@ -68,22 +69,36 @@ function checkLength (){
 
 function tipOfTheDay() {
     let channel = document.getElementById("channel").value;
+    let tipIG = ["Use the swipe feature in IG to create a journey. </br>Think of each swipe as a turn of the page.",
+                "Instagram relies on images that tell a story. </br>How much story can you pack into one post?",
+                "While Instagram's analytics are limited, the data can </br>still answer some of the most basic data questions."];
+    let tipFB = ["Stay up-to-date on Facebooks Edgerank algorithm. </br>Doing so will pay out in the form of more engaement and reach.",
+                "",
+                ""];
+    let tipTW = ["Tweet well and tweet often.",
+                "",
+                ""];
+    let tip = ["Ugh, LinkedIn...",
+                "LinkedIn is the biggest pool of a targeted market on the internet: professionals.",
+                ""];
+    
+    
     switch(channel) {
         case "instagram":
             // alert("IG");
-            document.getElementById('span2').innerHTML= "Use the swipe feature in IG to create a journey. </br>Think of each swipe as a turn of the page.";
+            document.getElementById('span2').innerHTML= tipIG[1];
             break;
         case "facebook":
-            document.getElementById('span2').innerHTML= "Stay up-to-date on Facebooks Edgerank algorithm. </br>Doing so will pay out in the form of more engaement and reach.";
+            document.getElementById('span2').innerHTML= tipFB[1];
             // alert("FB");
             break;
         case "twitter":
             // alert("TW");
-            document.getElementById('span2').innerHTML= "Tweet well and tweet often.";
+            document.getElementById('span2').innerHTML= tipTW[0];
             break;
         case "linkedin":
             // alert("LI");
-            document.getElementById('span2').innerHTML= "Ugh, LinkedIn...";
+            document.getElementById('span2').innerHTML= tipLI[2];
             break;
         default:
             alert("oops");
